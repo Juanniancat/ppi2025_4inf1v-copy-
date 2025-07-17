@@ -4,7 +4,6 @@
   align-items: center;
   padding: 2rem;
   gap: 2rem;
-<<<<<<< HEAD
 }
 
 .productList {
@@ -13,6 +12,4 @@
   gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: repeat(auto-fit, min-content);
-=======
->>>>>>> 2b847fd0fd1cfe1239ef19d961e3d0b8ae107666
 }
