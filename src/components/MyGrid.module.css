@@ -42,7 +42,7 @@
 
 .header1 {
   grid-area: header1;
-  background-color: darkslateblue;
+  background-color: rgb(78, 69, 138);
 }
 
 .header2 {
@@ -52,7 +52,7 @@
 
 .aside {
   grid-area: aside;
-  background-color: deeppink;
+  background-color: rgb(121, 30, 78);
 
   @media (max-width: 1200px) {
     display: none;
