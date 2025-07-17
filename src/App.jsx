@@ -4,7 +4,6 @@ import { ProductList } from "./components/ProductList";
 import { Header } from "./components/Header";
 import { useState } from "react";
 import { LuckyNumber } from "./components/LuckyNumber";
-import { ProductList } from "./components/ProductList";
 
 export default function App() {
   
