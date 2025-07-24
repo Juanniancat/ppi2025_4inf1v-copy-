@@ -14,13 +14,35 @@ export default function App() {
     setCart((prevCart) => [...prevCart, product]);
   }
 
+   function updateQuantity(id, quantity) {
+    setCart(cart =>
+      cart.map(item =>
+        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+      )
+    );
+  }
+
+  function removeFromCart(id) {
+    setCart(cart => cart.filter(item => item.id !== id));
+  }
+
+  function clearCart() {
+    setCart([]);
+  }
   return (
     //React Fragment
     <>
       <Header cart={cart} />
       <Routes>
         <Route path="/" element={<ProductList addToCart={addToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} />} />
+         <Route path="/cart" element={
+          <Cart 
+            cart={cart} 
+            updateQuantity={updateQuantity} 
+            removeFromCart={removeFromCart} 
+            clearCart={clearCart} 
+          />} 
+        />
       </Routes>
     </>
   );
