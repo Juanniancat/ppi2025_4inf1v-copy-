@@ -1,34 +1,41 @@
-.productCard {
-  border: 0.25rem solid var(--primary);
-  border-radius: 5rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
-  text-align: center;
-  background-color: var(--gray-100);
+  margin: 15rem 0;
+  gap: 2rem;
 }
 
-.productImage {
+.productList {
+  padding: 1rem 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fit, min-content);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
-  border-radius: 0.5rem;
 }
 
-.productTitle {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
-.productDescription {
+.searchInput {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  justify-content: center;
+  padding: 1rem;
   font-size: 2rem;
-  color: var(--primary-dark);
+  border: 0.25rem solid var(--primary);
+  border-radius: 1rem;
 }
 
-.productPrice {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 2rem 0;
-}
-
-.productButton {
+.searchButton {
   background-color: var(--primary);
   color: var(--gray-900);
   border: none;
@@ -36,8 +43,10 @@
   border-radius: 1rem;
   cursor: pointer;
   font-size: 2rem;
+  font-weight: bold;
+  border: 0.25rem solid var(--gray-900);
 }
 
-.productButton:hover {
+.searchButton:hover {
   background-color: var(--primary-dark);
 }

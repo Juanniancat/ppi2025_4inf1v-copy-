@@ -12,10 +12,10 @@ export default function App() {
     <>
       <CartProvider>
         <Header />
-        <Routes>
-          <Route path="/" element={<ProductList />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
+          <Routes>
+              <Route path="/" element={<ProductList />} />
+              <Route path="/cart" element={<Cart />} />
+          </Routes>
       </CartProvider>
     </>
   );
