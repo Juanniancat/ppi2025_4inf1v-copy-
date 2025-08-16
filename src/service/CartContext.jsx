@@ -38,11 +38,11 @@ export function CartProvider({ children }) {
     fetchProducts();
   }, []);
 
-  // State to manage the cart
+
   const [cart, setCart] = useState([]);
 
   function addToCart(product) {
-    // Check if the product is already in the cart
+   
     const existingProduct = cart.find((item) => item.id === product.id);
     if (existingProduct) {
       updateQtyCart(product.id, existingProduct.quantity + 1);

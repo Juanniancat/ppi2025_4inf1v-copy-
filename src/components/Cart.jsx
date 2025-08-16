@@ -3,17 +3,15 @@ import { useContext } from "react";
 import { CartContext } from "../service/CartContext";
 import { Trash } from "lucide-react";
 
-
 export function Cart() {
   const { cart, updateQtyCart, removeFromCart, clearCart } =
     useContext(CartContext);
 
   return (
-    
     <div className={styles.cart}>
-      <h2>Carrinho de compras</h2>
+      <h1>Seu Carrinho</h1>
       {cart.length === 0 ? (
-        <p>Seu carrinho está vazio, que tal adicionar alguma coisa nele?</p>
+        <h1>Seu carrinho infelizmente está vazio, adiciona alguma coisa da nossa loja :)</h1>
       ) : (
         <ul>
           {cart.map((product, index) => (
@@ -51,7 +49,7 @@ export function Cart() {
       )}
       {cart.length > 0 && (
         <button onClick={clearCart} className={styles.removeButton}>
-          Esvaziar Carrinho <Trash />
+          Limpar carrinho. <Trash />
         </button>
       )}
     </div>

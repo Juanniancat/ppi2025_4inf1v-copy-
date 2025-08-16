@@ -1,17 +1,18 @@
 .container {
-    /* margin: 0 auto; */
-    width: 30rem;
+
+    max-width: 30rem;
 
     @media (max-width: 768px) {
-        width: 80%;
+        max-width: 80%;
+        
     }
 }
 
 .div {
-    height: 30rem;
+    height: 20rem;
     background-color: var(--primary);
     box-shadow: 0 0 1rem var(--primary-contrast-dark);
-    /* margin: 3rem 5rem; */
+    /*margin: 3rem 5rem;*/
     padding: 3rem;
     border-radius: 2rem;
 }

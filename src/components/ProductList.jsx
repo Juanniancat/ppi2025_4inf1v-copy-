@@ -59,10 +59,10 @@ export function ProductList() {
             style={{ margin: "2rem auto", display: "block" }}
             sx={{ color: "#001111" }}
           />
-          <p>Loading products...</p>
+          <p>Carregando Produtos...</p>
         </div>
       )}
-      {error && <p>Error loading products: {error.message} ❌</p>}
+      {error && <p>Erro ao carregar produtos: {error.message} ❌</p>}
     </div>
   );
 }

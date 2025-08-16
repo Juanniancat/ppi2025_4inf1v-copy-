@@ -23,7 +23,7 @@ export function Product({ product }) {
         }}
         className={styles.productButton}
       >
-        ADD TO CART
+        Adicionar no Carrinho
       </button>
       {/* </Link> */}
     </div>

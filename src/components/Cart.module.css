@@ -1,5 +1,4 @@
 .cart {
-    
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -11,6 +10,7 @@
 .cart h2 {
   font-size: 4rem;
   font-weight: bolder;
+  color: white;
 }
 
 .cart p {
@@ -26,7 +26,7 @@
   padding: 2rem 5rem;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: var(--gray-100);
+  background-color: rgb(192, 101, 101);
   color: var(--primary-contrast-dark);
 }
 
@@ -77,9 +77,10 @@
 
 .removeButton {
   background-color: transparent;
-  border: none;
+  border: 3px solid var(--primary);
+  border-radius: 3rem;
   cursor: pointer;
-  color: var(--primary-dark);
+  color: var(--primary-contrast-dark);
   font-size: 2.5rem;
   margin-left: 2rem;
 }

@@ -1,32 +1,36 @@
 .container {
-  padding: 3rem;
-  display: flex;
-  flex-direction: row; /* row column row-reverse column-reverse */
-  flex-wrap: wrap; /* nowrap wrap wrap-reverse */
-  gap: 3rem;
+    
+    padding: 3rem;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 3rem; 
 
-  /* EIXO HORIZONTAL - Main Axis */
-  justify-content: center; /* flex-start flex-end center space-between space-around space-evenly */
+    
+    justify-content: center; 
+    
+    align-items: center; 
+    align-content: center; 
 
-  /* EIXO VERTICAL - Cross Axis */
-  align-items: center; /* flex-start flex-end center baseline stretch */
-  align-content: center; /* flex-start flex-end center baseline stretch */
-
-  @media (max-width: 768px) {
-    flex-flow: column nowrap;
-  }
+    @media (max-width: 768px) {
+        flex-flow: column nowrap;
+        
+    }
 }
 
 .title {
-  font-size: 10rem;
-  font-weight: bolder;
-  text-align: center;
+    font-size: 10rem;
+    font-weight: bolder;
+    text-align: center;
 
-  @media (max-width: 1200px) {
-    font-size: 6rem;
+    @media (max-width: 1200px) {
+        font-size: 6rem;
 
-    @media (max-width: 768px) {
-      font-size: 3rem;
+        @media (max-width: 768px) {
+            font-size: 3rem;
+            
+        }
     }
-  }
+
 }
+
