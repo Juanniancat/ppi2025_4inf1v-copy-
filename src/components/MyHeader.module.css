@@ -5,6 +5,402 @@
   gap: 3rem;
   height: 15rem;
   padding: 5rem;
+
+
+  background-color: var(--primary);
+  
+  border-bottom: 1px solid var(--gray-400); 
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.container h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--background); 
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--text); 
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--primary-dark);
+}
+
+.cartInfo {
+  border-radius: 3rem;
+  background-color: var(--primary-light);
+  color: var(--primary-contrast); 
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.cartCount {
+  position: absolute;
+  top: -0.8rem;
+  right: -2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-dark);
+  color: var(--gray-100);
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.userMenuContainer {
+    position: relative; 
+}
+
+.userTrigger {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.userTrigger:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%; 
+    right: 0;
+    
+    background-color: var(--background); 
+    border: 1px solid var(--gray-300); 
+    
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+    z-index: 1100;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    
+    color: var(--text);
+    
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: var(--gray-200);
+}
+
+.logoutBtn {
+    color: #dc3545; 
+    border-top: 1px solid var(--gray-300);
+}
+
+.logoutBtn:hover {
+    background-color: #fff1f2;
+}
+
+
+
+
+
+
+
+
+
+
+/*.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  height: 15rem;
+  padding: 5rem;
+  background-color: rgb(255, 95, 116);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--background);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--primary-dark);
+}
+
+
+.cartInfo {
+  border-radius: 3rem;
+  background-color: var(--primary-light);
+  color: var(--primary-contrast-dark);
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.cartCount {
+  position: absolute;
+  top: -0.8rem;
+  right: -2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-dark);
+  color: var(--gray-100);
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.userMenuContainer {
+    position: relative; 
+}
+
+.userTrigger {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.userTrigger:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%; 
+    right: 0;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+    z-index: 1100;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #333;
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: #f0f0f0;
+}
+
+.logoutBtn {
+    color: #dc3545; 
+    border-top: 1px solid #eee;
+}
+
+.logoutBtn:hover {
+    background-color: #fff1f2;
+}*/
+
+
+
+
+
+
+
+
+/*.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  height: 15rem;
+  padding: 5rem;
+  background-color: rgb(255, 95, 116);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--background);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--primary);
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--primary-dark);
+}
+
+.containerImg img {
+  height: auto;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.container p {
+  font-size: 1.5rem;
+}
+
+.cartInfo {
+  border-radius: 3rem;
+  background-color: var(--primary-light);
+  color: var(--primary-contrast-dark);
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.cartCount {
+  position: absolute;
+  top: -0.8rem;
+  right: -2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-dark);
+  color: var(--gray-100);
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.welcomeMessage {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.welcomeMessage:hover {
+  text-decoration: underline;
+}*/
+
+
+
+
+
+
+
+
+/*.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  height: 15rem;
+  padding: 5rem;
   background-color: var(--primary);
 
   position: fixed;
@@ -81,4 +477,4 @@
 
 .authLink:hover {
   color: yellow;
-}
+}*/

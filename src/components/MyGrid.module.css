@@ -1,65 +1,107 @@
 .grid {
-  padding: 3rem;
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: repeat(auto-fit, min-content);
+    padding: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* 3 columns of equal width *//*1fr 1fr 1fr*/
+    grid-template-rows: repeat(auto-fit, min-content); /* 3 rows of equal height */
 }
 
 .card {
-  height: 20rem;
-  background-color: var(--primary-dark);
-  color: var(--primary-contrast-light);
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  font-size: 3rem;
-  text-align: center;
+    height: 20rem;
+    background-color: var(--primary-light);
+    color: var(--primary-contrast-light);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    text-align: center;
 }
 
 .container {
-  display: grid;
+    display: grid;
+    
+    grid-template-areas: 
+    "header1 header1 header1"
+    "aside1 header2 aside2"
+    "aside1 main aside2"
+    "aside1 footer1 aside2"
+    "footer2 footer2 aside2";
+    
+    
+    grid-template-columns: 1fr 3fr 1fr;
+    /*grid-template-rows: 10rem 5rem calc(100vh - 15rem) 10rem;*/
+    grid-template-rows: 10rem 5rem auto 10rem 10rem /*10rem 5rem auto 10rem*/;
 
-  grid-template-areas:
-    "header1 header1"
-    "aside header2"
-    "aside main"
-    "footer footer";
-
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 10rem 5rem auto 10rem;
-
-  @media (max-width: 1200px) {
-    grid-template-areas:
-      "header1"
-      "header2"
-      "main"
-      "footer";
-
-    grid-template-columns: 1fr;
-  }
+    @media (max-width: 1200px) {
+        grid-template-areas: 
+        "header1 header1"
+        "aside1 header2"
+        "aside1 main"
+        "aside1 footer1"
+        "footer2 footer2";
+        
+        grid-template-columns: 1fr 3fr;
+        /*grid-template-rows: 10rem 5rem calc(100vh - 15rem) 10rem;*/
+        grid-template-rows: 10rem 5rem auto 10rem 10rem;
+        
+        @media (max-width: 768px) {
+            grid-template-areas: 
+            "header1"
+            "main"
+            "footer1";
+            
+            grid-template-columns: 1fr;
+            grid-template-rows: 10rem auto 10rem;
+        }
+    }
 }
 
 .header1 {
-  grid-area: header1;
-  background-color: rgb(78, 69, 138);
+    grid-area: header1;
+    background-color: wheat;
 }
 
 .header2 {
-  grid-area: header2;
-  background-color: deepskyblue;
+    grid-area: header2;
+    background-color: yellow;
+    /*@media (max-width: 768px) {
+        display: none;
+    }*/
 }
 
-.aside {
-  grid-area: aside;
-  background-color: rgb(121, 30, 78);
-
-  @media (max-width: 1200px) {
-    display: none;
-  }
+.aside1 {
+    grid-area: aside1;
+    background-color: darkseagreen;
+    /*@media (max-width: 768px) {
+        display: none;
+    }*/
 }
 
-.footer {
-  grid-area: footer;
-  background-color: darkslateblue;
+.aside2 {
+    grid-area: aside2;
+    background-color: rgb(17, 80, 17);
+    /*@media (max-width: 1200px) {
+        display: none;
+    }*/
+}
+
+.footer1 {
+    grid-area: footer1;
+    background-color: deeppink;
+}
+
+.footer2 {
+    grid-area: footer2;
+    background-color: red;
+    /*@media (max-width: 768px) {
+        display: none;
+    }*/
+}
+
+.main {
+    grid-area: main;
+    background-color: lightblue;
+    /*padding: 1rem;*/
+    /*overflow-y: auto;*/
+    /*height: calc(100vh - 25rem);  Adjust height based on header and footer */
 }

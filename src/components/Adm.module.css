@@ -2,6 +2,120 @@
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
+  
+  background: var(--background); 
+  border: 1px solid var(--gray-300);
+  
+  margin-top: 20rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text); 
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.form input {
+  padding: 0.6rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background-color: var(--background); 
+  color: var(--text);
+}
+
+.form button {
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  background: var(--primary);
+  color: var(--primary-contrast);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: var(--primary-dark);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--gray-100); 
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200);
+}
+
+.list img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.list strong {
+  color: var(--text); 
+}
+
+.list p {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: var(--gray-600); 
+}
+
+.list button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.list button:first-of-type {
+  background: #0077ff;
+  color: white;
+}
+
+.list button:last-of-type {
+  background: #dc3545;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/*.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
   background: #ffffff;
   margin-top: 20rem;
   border-radius: 12px;
@@ -101,5 +215,6 @@ h2 {
 }
 
 .list button:last-of-type:hover {
-  background: #ffffff;
+  background: #a71d2a;
 }
+*/

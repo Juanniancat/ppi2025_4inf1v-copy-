@@ -1,52 +1,104 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.productCard {
+  border: 0.25rem solid var(--gray-400); 
+  border-radius: 5rem;
   padding: 2rem;
-  margin: 15rem 0;
-  gap: 2rem;
+  text-align: center;
+  
+  background-color: var(--gray-100); 
+  transition: background-color 0.3s;
 }
 
-.productList {
-  padding: 1rem 3rem;
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-template-rows: repeat(auto-fit, min-content);
-}
-
-.searchContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.productImage {
   width: 100%;
+  max-width: 30rem;
+  border-radius: 0.5rem;
 }
 
-.searchInput {
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-  max-width: 60rem;
-  justify-content: center;
-  padding: 1rem;
+.productTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: var(--text); 
+}
+
+.productDescription {
   font-size: 2rem;
-  border: 0.25rem solid var(--primary);
-  border-radius: 1rem;
+  color: var(--gray-700); 
 }
 
-.searchButton {
-  background-color: var(--primary);
-  color: var(--gray-900);
+.productPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem 0;
+  color: var(--primary); 
+}
+
+.productButton {
+  background-color: var(--gray-300);
+  color: var(--text);
   border: none;
   padding: 1rem 2rem;
   border-radius: 1rem;
   cursor: pointer;
   font-size: 2rem;
-  font-weight: bold;
-  border: 0.25rem solid var(--gray-900);
+  transition: background-color 0.3s;
 }
 
-.searchButton:hover {
-  background-color: var(--primary-dark);
+.productButton:hover {
+  background-color: var(--primary);
+  color: var(--primary-contrast);
 }
+
+
+
+
+
+
+
+
+
+/*.productCard {
+  border: 0.25rem solid grey;
+  border-radius: 5rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(219, 159, 159);
+}
+
+.productImage {
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 0.5rem;
+}
+
+.productTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: black;
+}
+
+.productDescription {
+  font-size: 2rem;
+  color: black;
+}
+
+.productPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem 0;
+  color: black;
+}
+
+.productButton {
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.productButton:hover {
+  background-color: rgb(149, 149, 170);
+}*/

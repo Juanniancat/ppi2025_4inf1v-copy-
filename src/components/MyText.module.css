@@ -1,5 +1,5 @@
 .container {
-
+    /*margin: 0;*/
     max-width: 30rem;
 
     @media (max-width: 768px) {

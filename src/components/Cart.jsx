@@ -1,6 +1,6 @@
 import styles from "./Cart.module.css";
 import { useContext } from "react";
-import { CartContext } from "../service/CartContext";
+import { CartContext } from "../context/CartContext";
 import { Trash } from "lucide-react";
 
 export function Cart() {
@@ -9,9 +9,9 @@ export function Cart() {
 
   return (
     <div className={styles.cart}>
-      <h1>Seu Carrinho</h1>
+      <h2>Shopping Cart</h2>
       {cart.length === 0 ? (
-        <h1>Seu carrinho infelizmente está vazio, adiciona alguma coisa da nossa loja :)</h1>
+        <p>Your cart is empty.</p>
       ) : (
         <ul>
           {cart.map((product, index) => (
@@ -49,7 +49,7 @@ export function Cart() {
       )}
       {cart.length > 0 && (
         <button onClick={clearCart} className={styles.removeButton}>
-          Limpar carrinho. <Trash />
+          CLEAR CART <Trash />
         </button>
       )}
     </div>

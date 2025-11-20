@@ -1,11 +1,11 @@
 import styles from "./ProductList.module.css";
-import { CircularProgress } from "@mui/material";
+import { CircularProgress } from "@mui/material"; 
 import { Product } from "./Product";
 import { useState, useContext, useEffect, useRef } from "react";
-import { CartContext } from "../service/CartContext";
+import { CartContext } from "../context/CartContext"
 
 export function ProductList() {
-
+  
   const { products, loading, error } = useContext(CartContext);
 
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -59,10 +59,10 @@ export function ProductList() {
             style={{ margin: "2rem auto", display: "block" }}
             sx={{ color: "#001111" }}
           />
-          <p>Carregando Produtos...</p>
+          <p>Loading products...</p>
         </div>
       )}
-      {error && <p>Erro ao carregar produtos: {error.message} ❌</p>}
+      {error && <p>❌ {error}</p>}
     </div>
   );
 }

@@ -81,3 +81,26 @@
 }
 
 
+/*.grid {
+    padding: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: repeat(auto-fit, min-content);
+}
+
+.card {
+    height: auto;
+    background-color: var(--primary-light);
+    color: var(--primary-contrast-light);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightblue;
+}*/

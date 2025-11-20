@@ -1,16 +1,17 @@
 .container {
-    
+    /*height: 100vh;*/
     padding: 3rem;
     display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    gap: 3rem; 
+    flex-direction: row; /* row column eow_reverse column_reverse */
+    flex-wrap: wrap; /* nowrap wrap wrap-reverse */
+    gap: 3rem; /* space between items */
 
-    
-    justify-content: center; 
-    
-    align-items: center; 
-    align-content: center; 
+    /*Eixo horizontal - main axis*/
+    justify-content: center; /* flex-start flex-end center space-between space-around space-evenly */
+
+    /*Eixo vertical - cross axis*/
+    align-items: center; /* flex-start flex-end center baseline stretch */
+    align-content: center; /* flex-start flex-end center space-between space-around stretch */
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;

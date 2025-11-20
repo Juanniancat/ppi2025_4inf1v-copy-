@@ -1,9 +1,75 @@
 .container {
+  background-color: var(--background); 
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  margin: 15rem 0;
+  margin-top: 15rem;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.productList {
+  padding: 1rem 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fit, min-content);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.searchInput {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 2rem;
+  
+  background-color: var(--background);
+  color: var(--text);
+  border: 0.25rem solid var(--primary);
+  border-radius: 1rem;
+}
+
+.searchButton {
+  background-color: var(--primary);
+  color: var(--primary-contrast);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0.25rem solid var(--text);
+}
+
+.searchButton:hover {
+  background-color: var(--primary-dark);
+}
+
+
+
+
+
+
+
+
+/*.container {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 15rem;
   gap: 2rem;
 }
 
@@ -11,6 +77,42 @@
   padding: 1rem 3rem;
   display: grid;
   gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-template-rows: repeat(auto-fit, min-content);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fit, min-content);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.searchInput {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 0.25rem solid var(--primary);
+  border-radius: 1rem;
+}
+
+.searchButton {
+  background-color: var(--primary);
+  color: var(--gray-900);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0.25rem solid var(--gray-900);
+}
+
+.searchButton:hover {
+  background-color: var(--primary-dark);
+}*/
